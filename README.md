@@ -4,7 +4,7 @@ Hi! I am Rohan Katyal, an aspiring GSOC'15 student
 
 ## 1. Overview 
 
-This app uses the GA4GH APIs to fetch data and implement a simple visualization of their variant data 
+This app uses the GA4GH APIs to fetch data and implement a simple visualization of the variant data 
 
 ## 2. Technologies Used
 
@@ -12,3 +12,4 @@ This app uses the GA4GH APIs to fetch data and implement a simple visualization 
 2. CSS
 3. JS
 4. Highcharts 
+5. Bootstrap

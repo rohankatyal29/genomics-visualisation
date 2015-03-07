@@ -1,0 +1,55 @@
+<html>
+	<head>	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script src="genomeData.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	
+	<style>
+		
+		.center { 
+			left:25%;
+			width:50%;
+			height:50%;
+			top:25%;
+			position:absolute;
+		}
+	
+	</style>
+
+	</head>
+	<body>
+		<div id="formData" class="well col-lg-4 center">
+			<form role="form">
+				<div class="form-group">
+				<label for="variantId">Variant ID:</label>
+					<input type="text" class="form-control" id="variantId" value="10473108253681171589">
+				</div>
+
+				<div class="form-group">
+				<label for="callSetIds">Call Set ID:</label>
+					<input type="text" class="form-control" id="callSetId" value="10473108253681171589-0">
+				</div>
+
+				<div class="form-group">
+					<label for="numberOfVariants">Number of Variants:</label>
+					<input type="number" class="form-control" id="maxCalls" value="15">
+				</div>
+
+			</form>
+			<center><button id="submitBtn" class="btn btn-default">Submit</button></center>
+		</div>
+
+		<div id="graphHolder">
+		</div>
+
+		<div>
+			<center>
+				<button id="backBtn" style="display: none"class="btn btn-default">Back To Form</button>
+			</center>
+		</div>
+	</body>
+</html>
