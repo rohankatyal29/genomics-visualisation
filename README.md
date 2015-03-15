@@ -12,4 +12,6 @@ This app uses the GA4GH APIs to fetch data and implement a simple visualization 
 2. CSS
 3. JS
 4. Highcharts 
+5. D3.js
 5. Bootstrap
+
