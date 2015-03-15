@@ -4,21 +4,42 @@
 		<script src="http://code.highcharts.com/highcharts.js"></script>
 		<script src="http://code.highcharts.com/modules/exporting.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script src="http://d3js.org/d3.v3.js"></script>
 		<script src="./js/genome-data.js"></script>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<style>
+
+			body {
+			  font: 10px sans-serif;
+			}
+
+			.axis path,
+			.axis line {
+			  fill: none;
+			  stroke: #000;
+			  shape-rendering: crispEdges;
+			}
+
+			.x.axis path {
+			  display: none;
+			}
+
+			.line {
+			  fill: none;
+			  stroke: steelblue;
+			  stroke-width: 1.5px;
+			}
+			
+			.center { 
+				left:25%;
+				width:50%;
+				height:50%;
+				top:25%;
+				position:absolute;
+			}
 	
-	<style>
-		
-		.center { 
-			left:25%;
-			width:50%;
-			height:50%;
-			top:25%;
-			position:absolute;
-		}
-	
-	</style>
+		</style>
 
 	</head>
 	<body>
@@ -40,10 +61,12 @@
 				</div>
 
 			</form>
-			<center><button id="submitBtn" class="btn btn-default">Submit</button></center>
+			<center><button id="stacked-bar-graph" class="btn btn-default">Stacked Bar Graph (Highcharts)</button></center>
+			<center><button id="line-graph" class="btn btn-default">Line Graph (D3.js)</button></center>
 		</div>
 
 		<div id="graphHolder">
+			
 		</div>
 
 		<div>
