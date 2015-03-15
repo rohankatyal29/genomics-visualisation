@@ -7,23 +7,23 @@ var requestData, dataSet;
 
 jQuery(document).ready( function() {
     jQuery("#stacked-bar-graph").click(function(){
-        jQuery("#formData").hide();
-        jQuery("#graphHolder").append("<div id='container' class='well' style='min-width: 310px; height: 550px; margin: 0 auto'></div>");
-        jQuery("#backBtn").show();
+        jQuery("#formData").fadeOut(1200);
+        jQuery("#graphHolder").append("<div id='container' style='min-width: 310px; height: 550px; margin: 0 auto'></div>");
+        jQuery("#backBtn").fadeIn(1000);
         getBarGraphData();
     });   
 
     jQuery("#line-graph").click(function(){
-        jQuery("#formData").hide();
-        jQuery("#graphHolder").append("<div id='container' class='well' style='min-width: 310px; height: 550px; margin: 0 auto'></div>");
-        jQuery("#backBtn").show();
+        jQuery("#formData").fadeOut(1600);
+        jQuery("#graphHolder").append("<div id='container' style='min-width: 310px; height: 550px; margin: 0 auto'></div>");
+        jQuery("#backBtn").fadeIn(1000);
         getLineGraphData();
     });  
 
     jQuery("#backBtn").click(function() {
-        jQuery("#backBtn").hide();
+        jQuery("#backBtn").fadeOut(1000);
         jQuery("#container").remove();
-        jQuery("#formData").show();
+        jQuery("#formData").fadeIn(1000);
     });
       
 });
