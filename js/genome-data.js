@@ -22,7 +22,7 @@ jQuery(document).ready( function() {
 
     jQuery("#backBtn").click(function() {
         jQuery("#backBtn").fadeOut(1000);
-        jQuery("#container").remove();
+        jQuery("#container").fadeOut(1000, function() { $(this).remove(); });
         jQuery("#formData").fadeIn(1000);
     });
       
