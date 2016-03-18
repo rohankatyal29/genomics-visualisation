@@ -1,6 +1,6 @@
 # Genomics Visualisation
 
-Hi! I am Rohan Katyal, an aspiring GSOC'15 student
+Hi! I am Rohan Katyal
 
 ## 1. Overview 
 
